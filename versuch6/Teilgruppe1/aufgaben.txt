@@ -1,0 +1,11 @@
+Aufgabe 2)
+
+d)
+Non-authoritative answer simply means the answer is not fetched from the authoritative DNS server for the queried domain name, meaning its probably only cached or forwarded from the local DNS Server.
+
+A3
+
+a) mit recursion no; deaktiviert
+d) ?
+
+

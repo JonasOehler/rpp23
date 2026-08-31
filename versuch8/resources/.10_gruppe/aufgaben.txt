@@ -1,0 +1,20 @@
+a1
+
+c)
+Port 25 hat 4294967295 als Speed, ist ein 10Gbit/s Port aber Integer Wertebereich zu klein für Wert
+10 Mbit/s Ports für WOL benötigt
+
+d)
+Man sieht einige Geräte die einen Alias haben wie den IPV6-Router, der Rest sind vermutlich nicht fest vergebene Ports bzw. unterswitches und PCs
+
+e)
+Ausgeschaltete Geräte sind mit 10 Mbit/s verbunden, hören also noch auf Pakete
+Ein ausgeschaltetes Gerät ohne WOL sollte mit 0 Mbit/s verbunden sein
+
+i)
+
+hpicfTelnetEnable = 2
+hpicfBasicWebAgentIdleTime = 600
+
+hpicfBasicWebAgentInterface = 2 default für improved
+setzen auf 1 für traditional

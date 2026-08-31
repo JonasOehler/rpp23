@@ -1,0 +1,6 @@
+A3
+b) Die Inbound Regeln werden nicht mehr benötigt, da durch die outbound regeln der state erstellt wird und die zugehörigen antworten des servers dadurch durchgelassen werden
+
+A4
+iptables -A FORWARD -o eth1 -p udp -m udp  -s 141.62.67.120/29 --dport 53 -j ACCEPT
+iptables -A FORWARD -i eth1 -p udp -m udp --sport 53 -d 141.62.67.120/29 -j ACCEPT

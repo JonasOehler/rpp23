@@ -1,0 +1,22 @@
+A6
+ 1
+
+ 2
+	- 8000 Hz im Codec 
+	- nach 160 Abtastungen immer ein Ethernet-Paket, also ca. alle 20ms
+ 3
+	- Ethernet Paket enthält 214 byte
+	- Zu große Paketgrößen würden einen zu großen Verlust bei nicht-übertragung bedeuten und zu große Verzögerung, zu kleine würden zu viele Pakete bedeuten
+ 4
+	- Der Jitter varriert zwischen 0 und 0.5 ms
+ 5
+	- ca. alle 5 Sekunden RTCP Pakete
+	- Kontrolle, falls Handlung benötigt (wie z.B. erhöhte Komprimierung) wird über Steuernachricht mitgeteilt
+ 6
+	- 21804 auf der empfänger Seite, 49701 auf der client seite
+
+A7
+	- Bei (ungengekündigtem) Verbindungsverlust wird im 4-Sekunden Abstand ein Bye-Paket gesendet, wenn darauf keine Antwort mehr erfolgt wird nach kurzer Zeit aufgehört um die verbindung nicht unnötig aufrechtzuerhalten
+
+A8
+	- 
